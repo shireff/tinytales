@@ -64,8 +64,8 @@ src/
 
 1. **Clone the repository**
    ```bash
-   git clone <github-repo>
-   cd github-repo
+   git clone https://github.com/shireff/tinytales.git
+   cd tinytales
    ```
 
 2. **Install dependencies**
@@ -77,7 +77,7 @@ src/
    
    Create a `.env.local` file in the root directory:
    ```env
-   NEXT_PUBLIC_API_URL=https://tinytales.trendline.marketing/api
+   NEXT_PUBLIC_API_URL=API BASE URL
    ```
 
 4. **Run the development server**
@@ -154,6 +154,6 @@ For testing the authentication flow:
 
 ## Repository & Live Demo
 
-- **GitHub Repository**: `<github-repo>`
-- **Live Demo**: `<your-vercel-url>`
+- **GitHub Repository**: `https://github.com/shireff/tinytales`
+- **Live Demo**: `https://tinytales-eta.vercel.app`
 
