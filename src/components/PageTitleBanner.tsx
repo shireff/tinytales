@@ -18,17 +18,17 @@ const PageTitleBanner: React.FC<PageTitleBannerProps> = ({
     <section className="relative h-[284px] w-full overflow-hidden bg-[#F5F5F5]">
       <div className="relative mx-auto flex h-full max-w-[1440px] flex-col items-center justify-center">
 
-        <div className="absolute top-[127px] left-[406px] z-10 hidden h-[120px] w-[628px] md:block overflow-hidden">
+        <div className="absolute top-[150px] left-1/2 z-10 h-[60px] w-full max-w-[628px] -translate-x-1/2 -translate-y-1/2 overflow-hidden md:h-[120px]">
           {isDefaultProductDetails ? (
             <Image
               src="/Product-Details.png"
-              alt=""
+              alt="Product Details Image"
               fill
               className="object-contain"
               priority
             />
           ) : (
-            <h1 className="font-poppins text-[80px] font-bold leading-none text-[#1A1A1A] text-center opacity-10">
+            <h1 className="font-poppins text-[40px] font-bold leading-none text-[#1A1A1A] text-center opacity-10 md:text-[80px]">
               {title}
             </h1>
           )}

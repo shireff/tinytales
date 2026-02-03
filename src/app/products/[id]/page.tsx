@@ -11,7 +11,14 @@ import RatingSummary from "@/components/RatingSummary";
 import ReviewList from "@/components/ReviewList";
 import SimilarItems from "@/components/SimilarItems";
 
-const BREADCRUMB_ITEMS = ["Home", "Our Category", "Product Details"];
+const BREADCRUMB_ITEMS = [
+  "Home",
+  "Our Category",
+  <span key="last">
+    <span className="md:hidden">T-Shirt</span>
+    <span className="hidden md:inline">Product Details</span>
+  </span>,
+];
 
 const PRODUCT_THUMBNAILS = [
   "/products/product-1.png",

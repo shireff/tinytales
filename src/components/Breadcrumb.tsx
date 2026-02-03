@@ -1,11 +1,11 @@
 "use client";
 
-import React, { memo } from "react";
+import React, { Fragment, memo } from "react";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 
 interface BreadcrumbProps {
-  items: string[];
+  items: (string | React.ReactNode)[];
 }
 
 const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
@@ -17,7 +17,7 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
           const isFirst = index === 0;
 
           return (
-            <React.Fragment key={item}>
+            <Fragment key={index}>
               {!isFirst && (
                 <div className="flex h-6 w-6 items-center justify-center">
                   <ChevronRight
@@ -39,7 +39,7 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
                   {item}
                 </Link>
               )}
-            </React.Fragment>
+            </Fragment>
           );
         })}
       </div>
